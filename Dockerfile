@@ -1,9 +1,9 @@
 
-FROM ubuntu:14.04
+FROM alpine:3.2
 
 MAINTAINER Arne Neumann <nlpdocker.programming@arne.cl>
 
-RUN apt-get update && apt-get install -y wget
+RUN mkdir /opt
 
 WORKDIR /opt
 RUN wget http://ml.nec-labs.com/senna/senna-v3.0.tgz
